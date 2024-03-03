@@ -1,8 +1,8 @@
 /* FONTS */
 @font-face {
     src: local("Galien-Regular"), 
-    url("./fonts/Galien-Regular.woff") format("woff"),
     url("./fonts/Galien-Regular.woff2") format("woff2"),
+    url("./fonts/Galien-Regular.woff") format("woff"),
     url("./fonts/Galien-Regular.ttf") format("ttf"),;
 
     font-family: "Galien";
