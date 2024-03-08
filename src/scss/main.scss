@@ -1,0 +1,33 @@
+@import "./reset";
+@import "./fonts";
+
+// HEADER
+.header {
+  width: 100%;
+  min-height: 768px;
+  // padding: 48px 83px;
+  background: linear-gradient(to top, rgba(152, 195, 232, 0.2) 0, transparent 522px);
+  position: relative;
+  
+
+  &::before {
+    content: "";
+    position: absolute;
+    bottom: 56px;
+    right: 23px;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background-image: url("../img/illustration.png");
+    background-repeat: no-repeat;
+    background-position: right bottom; 
+    background-origin: content-box; 
+}
+
+  &__container {
+    box-sizing: border-box;
+  }
+};
+
+
+
