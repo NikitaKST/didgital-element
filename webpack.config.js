@@ -25,6 +25,14 @@ module.exports = {
         },
       },
       {
+        test: /\.svg$/,
+        type: 'asset/inline',
+      },
+      {
+        test: /\.(png|jpg|gif)$/i,
+        type: 'asset/resource',
+      },
+      {
         test: /\.html$/,
         use: [
           {
@@ -39,14 +47,6 @@ module.exports = {
           'css-loader', 
           'sass-loader',
         ],
-      },
-      {
-        test: /\.svg$/,
-        type: 'asset/inline',
-      },
-      {
-        test: /\.(png|jpg|gif)$/i,
-        type: 'asset/resource',
       },
       {
         test: /\.(woff|woff2|ttf)$/,

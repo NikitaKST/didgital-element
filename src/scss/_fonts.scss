@@ -1,56 +1,56 @@
 /* FONTS */
 @font-face {
-    src: local("Galien-Regular"), 
-    url("../fonts/Galien-Regular.woff2") format("woff2"),
-    url("../fonts/Galien-Regular.woff") format("woff"),
-    url("../fonts/Galien-Regular.ttf") format("ttf"),;
+  src: local("Galien-Regular"), 
+  url("../fonts/Galien-Regular.woff2") format("woff2"),
+  url("../fonts/Galien-Regular.woff") format("woff"),
+  url("../fonts/Galien-Regular.ttf") format("ttf"),;
 
-    font-family: "Galien";
-    font-weight: normal;
-    font-style: normal;
+  font-family: "Galien";
+  font-weight: normal;
+  font-style: normal;
 
-    font-display: swap;
+  font-display: swap;
 }
 
 @font-face {
-    src: local("gilroy-regular"), 
-    url("../fonts/gilroy-regular.ttf") format("ttf");
+  src: local("gilroy-regular"), 
+  url("../fonts/gilroy-regular.ttf") format("ttf");
 
-    font-family: "Gilroy";
-    font-weight: normal;
-    font-style: normal;
+  font-family: "Gilroy";
+  font-weight: normal;
+  font-style: normal;
 }
 
 @font-face {
-    src: local("gilroy-bold"), 
-    url("../fonts/gilroy-bold.ttf") format("ttf");
+  src: local("gilroy-bold"), 
+  url("../fonts/gilroy-bold.ttf") format("ttf");
 
-    font-family: "Gilroy";
-    font-weight: bold;
-    font-style: normal;
+  font-family: "Gilroy";
+  font-weight: bold;
+  font-style: normal;
 }
 
 @font-face {
-    src: local("gilroy-regularitalic"), 
-    url("../fonts/gilroy-regularitalic.ttf") format("ttf");
+  src: local("gilroy-regularitalic"), 
+  url("../fonts/gilroy-regularitalic.ttf") format("ttf");
 
-    font-family: "Gilroy";
-    font-weight: normal;
-    font-style: italic;
+  font-family: "Gilroy";
+  font-weight: normal;
+  font-style: italic;
 }
 
 @font-face {
-    src: local("gilroy-bolditalic"), 
-    url("../fonts/gilroy-bolditalic.ttf") format("ttf");
+  src: local("gilroy-bolditalic"), 
+  url("../fonts/gilroy-bolditalic.ttf") format("ttf");
 
-    font-family: "Gilroy";
-    font-weight: bold;
-    font-style: italic;
+  font-family: "Gilroy";
+  font-weight: bold;
+  font-style: italic;
 }
 
-h1 {
-    font-family: Gilroy, sans-serif;
-    font-weight: bold;
-    font-weight: normal;
-    font-style: italic;
-} 
+// h1 {
+//   font-family: Gilroy, sans-serif;
+//   font-weight: bold;
+//   font-weight: normal;
+//   font-style: italic;
+// } 
