@@ -3,6 +3,9 @@ const HtmlWebPackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
 module.exports = {
+    stats: {
+    children: true,
+  },
   devtool: 'source-map',
   output: {
     path: path.resolve(__dirname, 'dist'),
@@ -52,13 +55,23 @@ module.exports = {
           filename: 'fonts/[name][ext]',
         },
       },
+      {
+        test: /\.pug$/,
+        exclude: /node_modules/,
+        use: [
+          {
+            loader: 'pug-loader',
+            options: {}
+          }
+        ]
+      },
 
     ],
   },
   plugins: [
     new HtmlWebPackPlugin({
-      template: './src/index.html',
-      filename: './index.html',
+      template: './src/pug/index.pug',
+      filename: 'index.html',
     }),
     new MiniCssExtractPlugin({
       filename: '[name].css',
