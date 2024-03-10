@@ -1,0 +1,26 @@
+// Button
+@mixin button {
+  width: 220px;
+  height: 56px;
+  font-family: $primary-font;
+  font-size: 16px;
+  font-weight: normal;
+  border-radius: 10px;
+  letter-spacing: 0.5px;
+  background-color: $button-color;
+  color: #fff;
+  margin-top: 80px;
+  cursor: pointer;
+  box-shadow: 5px 10px 20px rgba(53, 110, 173, 0.2);
+
+  &:hover {
+    background-color: $button-hover-color;
+  }
+}
+
+@mixin paragraph {
+  font-family: $primary-font;
+  font-size: $primary-size;
+  color: $primary-color;
+  line-height: 1.5;
+}
