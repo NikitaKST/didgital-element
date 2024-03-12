@@ -1,0 +1,132 @@
+.main {
+  width: 100%;
+  min-height: 1554px;
+
+  &__container {
+    box-sizing: border-box;
+    width: 100%;
+    max-width: $max-width;
+    min-width: $min-width;
+    margin: 0 auto;
+    padding: 192px 131px 212px;
+    position: relative;
+  }
+
+  &__title {
+    width: 358px;
+    font-family: $primary-font;
+    font-size: $size-title-h2;
+    font-weight: bold;
+    color: #316099;
+    letter-spacing: 1.5px;
+    line-height: 1.24;
+    position: absolute;  
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    flex-wrap: wrap-reverse;
+    justify-content: space-around;
+    height: 1250px;
+  }
+
+  &__article {
+    width: 380px;
+    height: 525px;
+    border-radius: 10px;
+    box-shadow: 5px 20px 50px rgba(16, 112, 177, 0.2);
+    box-sizing: border-box;
+    margin-bottom: 98px;
+    padding: 234px 46px 48px;
+
+      &-card {
+        display: flex;
+        flex-direction: column;
+      }
+
+      &-picture {
+        position: relative;
+
+        &-img {
+          position: absolute;
+          bottom: 58px;
+          left: 16px;
+        }
+      }
+      
+      &-content {
+        display: flex;
+        flex-direction: column;
+
+        &-title {
+          font-family: $primary-font;
+          font-size: 20px;
+          color: $primary-color;
+          letter-spacing: 1px;
+          line-height: 1.4;
+        }
+
+        &-text {
+          @include paragraph;
+          margin-top: 20px;
+        }
+      }
+      
+      &-footer {
+        margin-top: 34px;
+
+        &-block {
+          font-family: $primary-font;
+          font-size: 14px;
+          font-weight: bold;
+          width: 127px;
+          height: 30px;
+          background-repeat: no-repeat;
+          background-image: url("../img/arrow-right.svg");
+          padding-right: 42px;
+          background-position: right center;
+          cursor: pointer;
+          color: $button-color;
+          letter-spacing: 1px;   
+        }
+      } 
+  }
+  
+  .extra-margin {
+    margin-right: 16px;
+    margin-top: -36px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .main {
+    &__container {
+      padding: 20px 10px;  
+    }
+    
+    &__title {
+      width: 336px;
+      position: unset;
+      margin-bottom: 32px;  
+    }
+
+    &__content {
+      height: unset;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    &__article {
+      width: 338px;
+      margin-bottom: 50px;
+    }
+
+    .extra-margin {
+      margin-right: unset;
+      margin-top: unset;
+    }
+  }
+}

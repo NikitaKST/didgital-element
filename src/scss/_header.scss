@@ -1,4 +1,3 @@
-// HEADER
 .header {
   width: 100%;
   min-height: 768px;
@@ -13,7 +12,7 @@
     width: 100%;
     height: 100%;
     z-index: -1;
-    background-image: url("../img/illustration.png");
+    background-image: url("../img/illustration.svg");
     background-repeat: no-repeat;
     background-position: right bottom;
     background-origin: content-box;
@@ -51,10 +50,6 @@
   &__content {
     padding: 88px 130px;
     color: $primary-color;
-
-    @media (max-width: 650px) {
-      padding: 88px 20px;
-    }
   }
 
   &__title {
@@ -64,10 +59,6 @@
     color: inherit;
     letter-spacing: 3px;
     line-height: 1.15;
-
-    @media (max-width: 650px) {
-      font-size: 44px;
-    }
   }
 
   &__text {
@@ -82,4 +73,40 @@
     margin-top: 80px;
   }
   
+}
+
+@media (max-width: 650px) {
+  .header {
+    min-height: 660px;
+
+    &::before {
+      bottom: 300px;
+      right: 8px;
+      width: 330px;
+      height: 300px;
+      background-position: center;
+      background-size: cover;
+    }
+
+    &__content {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 88px 10px;
+    }
+
+    &__title {
+      font-size: 44px;
+      text-align: center;
+    }
+
+    &__nav {
+      margin-left: 10px;
+      margin-right: 10px;
+    }
+
+    &__button {
+      margin-top: 30px;
+    }
+  }
 }
