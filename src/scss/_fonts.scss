@@ -1,53 +1,26 @@
-/* FONTS */
+/* primaryFont */
 @font-face {
   src: local("Galien-Regular"), 
   url("../fonts/Galien-Regular.woff2") format("woff2"),
   url("../fonts/Galien-Regular.woff") format("woff"),
   url("../fonts/Galien-Regular.ttf") format("ttf");
 
-  font-family: "Galien";
-  font-weight: normal;
-  font-style: normal;
-
+  font-family: "Galien-Regular";
   font-display: swap;
 }
 
+/* secondaryFont */
 @font-face {
   src: local("gilroy-regular"), 
+  url("../fonts/gilroy-regular.woff2") format("woff2"),
+  url("../fonts/gilroy-regular.woff") format("woff"),
   url("../fonts/gilroy-regular.ttf") format("ttf");
 
-  font-family: "Gilroy";
-  font-weight: normal;
-  font-style: normal;
+  font-family: "Gilroy-Regular";
+  font-display: swap;
 }
 
-@font-face {
-  src: local("gilroy-bold"), 
-  url("../fonts/gilroy-bold.ttf") format("ttf");
-
-  font-family: "Gilroy";
-  font-weight: bold;
-  font-style: normal;
-}
-
-@font-face {
-  src: local("gilroy-regularitalic"), 
-  url("../fonts/gilroy-regularitalic.ttf") format("ttf");
-
-  font-family: "Gilroy";
-  font-weight: normal;
-  font-style: italic;
-}
-
-@font-face {
-  src: local("gilroy-bolditalic"), 
-  url("../fonts/gilroy-bolditalic.ttf") format("ttf");
-
-  font-family: "Gilroy";
-  font-weight: bold;
-  font-style: italic;
-}
-
+/* tertiaryFont */
 @font-face {
   src: local("gilroy-semibold"), 
   url("../fonts/gilroy-semibold.woff2") format("woff2"),
@@ -55,7 +28,6 @@
   url("../fonts/gilroy-semibold.ttf") format("ttf");
 
   font-family: "Gilroy-SemiBold";
-  font-weight: normal;
-  font-style: normal;
+  font-display: swap;
 }
 

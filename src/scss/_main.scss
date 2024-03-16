@@ -1,7 +1,7 @@
 .main {
   width: 100%;
   min-height: 1554px;
-
+  
   &__container {
     box-sizing: border-box;
     width: 100%;
@@ -14,9 +14,8 @@
 
   &__title {
     max-width: 358px;
-    font-family: $primary-font;
+    font-family: $tertiaryFont;
     font-size: $size-title-h2;
-    font-weight: bold;
     color: #316099;
     letter-spacing: 1.5px;
     line-height: 1.24;
@@ -40,7 +39,7 @@
     box-shadow: 5px 20px 50px rgba(16, 112, 177, 0.2);
     box-sizing: border-box;
     margin-bottom: 98px;
-    padding: 234px 46px 48px;
+    padding: 236px 47px 46px;
 
       &-card {
         display: flex;
@@ -52,9 +51,19 @@
 
         &-img {
           position: absolute;
-          bottom: 50px;
-          left: 24px;
-        }
+          bottom: 52px;
+          left: 22px;
+
+          &.secondary-img {
+            bottom: 57px;
+            left: 39px;
+          }
+
+          &.tertiary-img {
+            bottom: 56px;
+            left: 15px;
+          }
+        } 
       }
       
       &-content {
@@ -62,7 +71,7 @@
         flex-direction: column;
 
         &-title {
-          font-family: $primary-font;
+          font-family: $tertiaryFont;
           font-size: 20px;
           color: $primary-color;
           letter-spacing: 1px;
@@ -76,31 +85,30 @@
       }
       
       &-footer {
-        margin-top: 34px;
+        margin-top: 32px;
 
         &-block {
-          font-family: $primary-font;
+          font-family: $tertiaryFont;
           font-size: 14px;
-          font-weight: bold;
           width: 127px;
           height: 30px;
           background-repeat: no-repeat;
           background-image: url("../img/arrow-right.svg");
-          padding-right: 42px;
+          padding-right: 46px;
           background-position: right center;
           cursor: pointer;
           color: $button-color;
-          letter-spacing: 1px;   
+          letter-spacing: 0.8px;   
         }
-      } 
+      }
   }
-  
+
   .extra-margin {
     margin-right: 16px;
     margin-top: -36px;
   }
 }
-
+ 
 @media (max-width: 1000px) {
   .main {
     &__container {

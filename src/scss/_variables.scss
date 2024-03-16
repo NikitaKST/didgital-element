@@ -1,13 +1,17 @@
-// Sizes
+// Sizes container
 $max-width: 1200px; // Максимальная ширина контейнера
 $min-width: 360px; // Минимальная ширина контейнера
+
+//Fonts
+$primaryFont: Galien-Regular, sans-serif; 
+$secondaryFont: Gilroy-Regular, sans-serif;
+$tertiaryFont: Gilroy-SemiBold, sans-serif;
+
+//Size Fonts
+$size-title-h2: 36px;
+$primary-size: 16px;
 
 //Colors
 $primary-color: #1F3F68; // Основной цвет текста
 $button-color: #5A98D0; // Цвет кнопки
 $button-hover-color:#1877ca; // Цвет кнопки при наведении
-
-//Fonts
-$primary-font: Gilroy, sans-serif;
-$size-title-h2: 36px;
-$primary-size: 16px;

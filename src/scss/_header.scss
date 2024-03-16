@@ -54,7 +54,7 @@
 
   &__title {
     max-width: 507px;
-    font-family: Galien, sans-serif;
+    font-family: $primaryFont;
     font-size: 64px;
     color: inherit;
     letter-spacing: 3px;
@@ -63,9 +63,8 @@
 
   &__text {
     @include paragraph;
-    max-width: 425px;
+    max-width: 426px;
     margin-top: 44px;
-    
   }
 
   &__button {
