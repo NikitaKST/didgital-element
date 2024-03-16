@@ -1,0 +1,17 @@
+<svg width="48.000000" height="48.000000" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<desc>
+			Created with Pixso.
+	</desc>
+	<defs>
+		<clipPath id="clip1_368">
+			<rect id="logo" width="48.000000" height="48.000000" transform="matrix(1 0 0 -1 0 48)" fill="white" fill-opacity="0"/>
+		</clipPath>
+	</defs>
+	<rect id="logo" width="48.000000" height="48.000000" transform="matrix(1 0 0 -1 0 48)" fill="#FFFFFF" fill-opacity="0"/>
+	<g clip-path="url(#clip1_368)">
+		<circle id="Ellipse" cx="16.000000" cy="24.000000" r="16.000000" fill="#98C3E8" fill-opacity="1.000000"/>
+		<circle id="Ellipse" cx="32.000000" cy="24.000000" r="16.000000" fill="#FFFFFF" fill-opacity="1.000000"/>
+		<circle id="Ellipse" cx="32.000000" cy="24.000000" r="15.000000" stroke="#316099" stroke-opacity="1.000000" stroke-width="2.000000"/>
+		<path id="A" d="M34.45 30.48L35.29 33L38.3 33L33.37 19L29.96 19L25.05 33L28.04 33L28.88 30.48L34.45 30.48ZM31.67 22.17L33.59 27.9L29.76 27.9L31.67 22.17Z" fill="#316099" fill-opacity="1.000000" fill-rule="evenodd"/>
+	</g>
+</svg>

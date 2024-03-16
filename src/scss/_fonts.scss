@@ -3,7 +3,7 @@
   src: local("Galien-Regular"), 
   url("../fonts/Galien-Regular.woff2") format("woff2"),
   url("../fonts/Galien-Regular.woff") format("woff"),
-  url("../fonts/Galien-Regular.ttf") format("ttf"),;
+  url("../fonts/Galien-Regular.ttf") format("ttf");
 
   font-family: "Galien";
   font-weight: normal;
@@ -48,9 +48,14 @@
   font-style: italic;
 }
 
-// h1 {
-//   font-family: Gilroy, sans-serif;
-//   font-weight: bold;
-//   font-weight: normal;
-//   font-style: italic;
-// } 
+@font-face {
+  src: local("gilroy-semibold"), 
+  url("../fonts/gilroy-semibold.woff2") format("woff2"),
+  url("../fonts/gilroy-semibold.woff") format("woff"),
+  url("../fonts/gilroy-semibold.ttf") format("ttf");
+
+  font-family: "Gilroy-SemiBold";
+  font-weight: normal;
+  font-style: normal;
+}
+

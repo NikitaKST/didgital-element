@@ -1,0 +1,341 @@
+.footer {
+  width: 100%;
+  min-height: 1549px;
+  box-sizing: border-box;
+  background-color: $button-color;
+  border-top-left-radius: 200px;
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    background-color: #316099;
+    border-top-right-radius: 200px;
+    width: 100%;
+    height: 912px;
+    right: 96px;
+    bottom: 0;
+    background-position: left bottom;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 520px; 
+    width: 79vw; 
+    height: 2px;
+    background-color: white;
+    opacity: 0.4;
+  }
+  
+  &__container {
+    width: 100%;
+    box-sizing: border-box;
+    max-width: $max-width;
+    min-width: $min-width;
+    margin: 0 auto;
+    padding: 94px 131px 112px;
+    position: relative;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__top {
+    width: 100%;
+    min-height: 100px;
+    margin-bottom: 104px;
+    display: flex;
+    flex-wrap: wrap;
+    
+      &-title {
+        max-width: 220px;
+        font-family: $primary-font;
+        font-size: $size-title-h2;
+        color: #fff;
+        margin-right: 10px;
+        margin-right: 96px;
+        letter-spacing: 1.3px;
+        line-height: 1.3;
+      }
+
+      &-content {
+        width: 530px;
+        @include paragraph;
+        color: #fff;
+        letter-spacing: 1px;
+      }
+  }
+
+  &__logotips {
+    width: 100%;
+    min-height: 254px;
+    margin-bottom: 216px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+      &-picture {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-width: calc(946px / 4 - 3px);
+        min-height: calc(254px / 2 - 1px);
+      }
+
+      &-img {
+        font-family: $primary-font;
+        font-weight: bold;
+        font-size: 20px;
+        text-transform: uppercase;
+        color: #fff;
+        letter-spacing: 1px;
+      }
+
+      &-button {
+        width: calc(946px / 4 - 3px);
+        height: calc(254px / 2 - 1px);
+        background-color: rgba($primary-color, 0.2);
+        font-family: $primary-font;
+        font-weight: bold;
+        font-size: 20px;
+        color: #fff;
+        letter-spacing: 1px;
+        cursor: pointer;
+        
+        &:last-child {
+          border-top: 1px solid rgba(white, 0.5);
+        }
+      }
+  }
+
+  .extra-border {
+    border-top: 1px solid rgba(white, 0.5);
+    border-right: 1px solid rgba(white, 0.5);
+  }
+
+  .border-right {
+    border-right: 1px solid rgba(white, 0.5);
+  }
+
+  &__section {
+    width: 100%;
+    min-height: 304px;
+    margin-bottom: 94px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    position: relative;
+
+      &-content {
+        max-width: 468px;
+          &-title {
+            max-width: 402px;
+            font-family: $primary-font;
+            font-size: $size-title-h2;
+            font-weight: bold;
+            color: #fff;
+            letter-spacing: 1.5px;
+            line-height: 1.3;
+            margin-bottom: 32px;
+          }
+
+          &-description {
+            @include paragraph;
+            color: #fff;
+            letter-spacing: 0.75px;
+            opacity: 0.6;
+          }
+      }
+
+      &-content-button {
+        @include button;
+        margin-top: 76px;
+        margin-right: 80px;
+      }
+  }
+
+  &__bottom {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    padding-bottom: 40px;
+
+      &-contact {
+        box-sizing: border-box;
+        width: 260px;
+        margin-right: 138px;
+
+        &-block1 {
+          display: flex;
+          align-items: flex-start;
+          margin-bottom: 32px;
+        }
+
+        &-block {
+          display: flex;
+          align-items: flex-start;
+          margin-bottom: 27px;
+        }
+
+        &-link {
+          width: 14px;
+          height: 14px;
+        }
+
+        &-title {
+          font-family: Gilroy-SemiBold, sans-serif;
+          font-size: 28px;
+          color: #fff;
+          padding-top: 6px;
+          padding-left: 16px;
+          letter-spacing: 0.5px;
+        }
+
+        &-item {
+          font-family: $primary-font;
+          font-size: $primary-size;
+          color: #fff;
+          padding-left: 20px;
+          letter-spacing: 0.8px;
+          line-height: 1.42;
+        }
+      }
+
+      &-about {
+        margin-right: 74px;
+
+        &-title {
+          font-family: $primary-font;
+          font-size: 20px;
+          color: #fff;
+          letter-spacing: 1.5px;
+          line-height: 2;
+          margin-top: -6px;
+          margin-bottom: 20px;
+        }
+
+        &-item {
+          font-family: $primary-font;
+          color: #fff;
+          font-size: $primary-size;
+          letter-spacing: 1px;
+          line-height: 2.6;
+        }
+      }
+
+      &-follow {
+        &-title {
+          font-family: $primary-font;
+          font-size: 20px;
+          color: #fff;
+          letter-spacing: 1.5px;
+          line-height: 2;
+          margin-top: -4px;
+          margin-bottom: 20px;
+        }
+
+        &-item {
+          font-family: $primary-font;
+          font-size: $primary-size;
+          color: #fff;
+          letter-spacing: 1px;
+          line-height: 2.6;
+        }
+      }
+  }
+
+  &__copyright {
+    font-family: $primary-font;
+    font-size: $primary-size;
+    color: #fff;
+    letter-spacing: 0.8px;
+    opacity: 0.4;
+  }
+}
+
+@media (max-width: 360px) {
+  .footer {
+    &::before {
+      right: 50px;
+    }
+
+    &::after {
+      display: none;
+    }
+
+    &__container {
+      padding: 50px 10px;
+    }
+
+    &__top {
+      justify-content: center;
+      margin-bottom: $primary-size;
+
+      &-title {
+        margin-right: unset;
+        margin-bottom: 46px;
+      }
+    }
+
+    &__logotips {
+      margin-bottom: 60px;
+
+      &-picture {
+        border-bottom: 1px solid #fff;
+      }
+
+      &-button {
+        &:last-child {
+          border-top: unset;
+          border-bottom: 1px solid #fff;
+        }
+      }
+    }
+
+    &__section {
+      justify-content: center;
+      margin-bottom: 148px;
+
+      &-content {
+        &-button {
+          margin-top: 10px;
+          margin-right: unset;
+        }
+      }
+    }
+
+    &__bottom {
+        &-about {
+          margin-bottom: 40px;
+
+          &-title {
+            text-align: end;
+            margin-bottom: 6px;
+          }
+        }
+  
+        &-follow {
+          min-width: 166.5px;
+            &-title {
+              margin-bottom: 6px;
+              text-align: end;
+          }
+        }
+    }
+
+    &__copyright {
+      font-size: 12px;
+    }
+
+    .extra-border {
+      border-right: unset;
+      border-top: unset;
+    }
+
+    .border-right {
+      border-right: unset;
+    }
+  }
+}
