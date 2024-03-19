@@ -3,11 +3,11 @@
   width: 220px;
   height: 56px;
   font-family: $secondaryFont;
-  font-size: 16px;
+  font-size: $primaryFontSize;
   font-weight: normal;
   border-radius: 10px;
   letter-spacing: 0.5px;
-  background-color: $button-color;
+  background-color: $buttonСolor;
   color: #fff;
   margin-top: 80px;
   cursor: pointer;
@@ -17,14 +17,28 @@
   align-items: center;
 
   &:hover {
-    background-color: $button-hover-color;
+    background-color: $buttonHoverColor;
   }
 }
 
 @mixin paragraph {
   font-family: $secondaryFont;
-  font-size: $primary-size;
-  color: $primary-color;
+  font-size: $primaryFontSize;
+  color: $mainColorTitles;
   line-height: 1.6;
   letter-spacing: 0.8px;
+  opacity: 0.6;
+}
+
+@mixin formPropery {
+  -webkit-appearance: none;
+  box-sizing: border-box;
+  font-family: Gilroy-Light, sans-serif;
+  font-size: $primaryFontSize;
+  color: rgba($mainColorTitles, 0.2);
+  border-color: rgba(53, 110, 173, 0.4);
+  border-width: 1px;
+  height: 72px;
+  margin-bottom: 36px;
+  border-radius: 10px;
 }

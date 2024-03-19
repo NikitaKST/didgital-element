@@ -1,6 +1,6 @@
 // Sizes container
-$max-width: 1200px; // Максимальная ширина контейнера
-$min-width: 360px; // Минимальная ширина контейнера
+$maxWidth: 1200px; // Максимальная ширина контейнера
+$minWidth: 360px; // Минимальная ширина контейнера
 
 //Fonts
 $primaryFont: Galien-Regular, sans-serif; 
@@ -8,10 +8,20 @@ $secondaryFont: Gilroy-Regular, sans-serif;
 $tertiaryFont: Gilroy-SemiBold, sans-serif;
 
 //Size Fonts
-$size-title-h2: 36px;
-$primary-size: 16px;
+$mainTitleFontSize: 4rem; //main title (h1) 64px
+$secondTitlesFontSize: 2.25rem; //second title (h2-h4) 36px
+$thirdTitleFontSize: 1.75rem; //third title (h6) 28px
+$fourthTitleFontSize: 1.25rem; //fourth tittle (h5) + exta title 20px
+
+$primaryFontSize: 1rem; //primary size 16px
+$secondaryFontSize: 0.875rem; //secondary size 14px
 
 //Colors
-$primary-color: #1F3F68; // Основной цвет текста
-$button-color: #5A98D0; // Цвет кнопки
-$button-hover-color:#1877ca; // Цвет кнопки при наведении
+$mainColorTitles: #1F3F68; // the main color of the titles
+$secondColorTitles: #316099; // the second color of the titles
+
+$buttonСolor: #5A98D0; // color button
+$buttonHoverColor:#1877ca; // color button hover
+
+$footerMainСolor: #5A98D0; // main background footer
+$footerSecondСolor: #316099; // second background footer

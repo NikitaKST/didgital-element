@@ -31,3 +31,12 @@
   font-display: swap;
 }
 
+@font-face {
+  src: local("gilroy-light"), 
+  url("../fonts/gilroy-light.woff2") format("woff2"),
+  url("../fonts/gilroy-light.woff") format("woff"),
+  url("../fonts/gilroy-light.ttf") format("ttf");
+
+  font-family: "Gilroy-Light";
+  font-display: swap;
+}

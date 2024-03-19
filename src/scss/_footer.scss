@@ -1,15 +1,16 @@
 .footer {
   width: 100%;
   min-height: 1549px;
-  box-sizing: border-box;
-  background-color: $button-color;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background-color: $footerMainСolor;
   border-top-left-radius: 200px;
   position: relative;
 
   &::before {
     content: "";
     position: absolute;
-    background-color: #316099;
+    background-color: $footerSecondСolor;
     border-top-right-radius: 200px;
     width: 100%;
     height: 912px;
@@ -31,28 +32,37 @@
   
   &__container {
     width: 100%;
-    box-sizing: border-box;
-    max-width: $max-width;
-    min-width: $min-width;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    max-width: $maxWidth;
+    min-width: $minWidth;
     margin: 0 auto;
     padding: 94px 131px 112px;
     position: relative;
     z-index: 2;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
 
   &__top {
     width: 100%;
     min-height: 100px;
     margin-bottom: 104px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
     
       &-title {
         max-width: 222px;
         font-family: $tertiaryFont;
-        font-size: $size-title-h2;
+        font-size: $secondTitlesFontSize;
         color: #fff;
         margin-right: 10px;
         margin-right: 96px;
@@ -71,21 +81,32 @@
     width: 100%;
     min-height: 254px;
     margin-bottom: 216px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
 
       &-picture {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        align-items: center;
-        justify-content: center;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
         min-width: calc(946px / 4 - 3px);
         min-height: calc(254px / 2 - 1px);
       }
 
       &-img {
         font-family: $tertiaryFont;
-        font-size: 20px;
+        font-size: $fourthTitleFontSize;
         text-transform: uppercase;
         color: #fff;
         letter-spacing: 0.5px;
@@ -94,9 +115,9 @@
       &-button {
         width: calc(946px / 4 - 3px);
         height: calc(254px / 2 - 1px);
-        background-color: rgba($primary-color, 0.2);
+        background-color: rgba($mainColorTitles, 0.2);
         font-family: $tertiaryFont;
-        font-size: 20px;
+        font-size: $fourthTitleFontSize;
         color: #fff;
         letter-spacing: 0.5px;
         cursor: pointer;
@@ -120,9 +141,14 @@
     width: 100%;
     min-height: 304px;
     margin-bottom: 94px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     position: relative;
 
       &-content {
@@ -130,7 +156,7 @@
           &-title {
             max-width: 400px;
             font-family: $tertiaryFont;
-            font-size: $size-title-h2;
+            font-size: $secondTitlesFontSize;
             color: #fff;
             letter-spacing: 1.5px;
             line-height: 1.3;
@@ -140,8 +166,6 @@
           &-description {
             @include paragraph;
             color: #fff;
-            letter-spacing: 0.75px;
-            opacity: 0.6;
           }
       }
 
@@ -153,25 +177,37 @@
   }
 
   &__bottom {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
     width: 100%;
     padding-bottom: 40px;
 
       &-contact {
-        box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+                box-sizing: border-box;
         width: 260px;
         margin-right: 138px;
 
         &-block1 {
+          display: -webkit-box;
+          display: -ms-flexbox;
           display: flex;
-          align-items: flex-start;
+          -webkit-box-align: start;
+              -ms-flex-align: start;
+                  align-items: flex-start;
           margin-bottom: 32px;
         }
 
         &-block {
+          display: -webkit-box;
+          display: -ms-flexbox;
           display: flex;
-          align-items: flex-start;
+          -webkit-box-align: start;
+              -ms-flex-align: start;
+                  align-items: flex-start;
           margin-bottom: 27px;
         }
 
@@ -182,7 +218,7 @@
 
         &-title {
           font-family: $tertiaryFont;
-          font-size: 28px;
+          font-size: $thirdTitleFontSize;
           color: #fff;
           padding-top: 6px;
           padding-left: 16px;
@@ -191,7 +227,7 @@
 
         &-item {
           font-family: $secondaryFont;
-          font-size: $primary-size;
+          font-size: $primaryFontSize;
           color: #fff;
           padding-left: 20px;
           letter-spacing: 0.8px;
@@ -204,7 +240,7 @@
 
         &-title {
           font-family: $tertiaryFont;
-          font-size: 20px;
+          font-size: $fourthTitleFontSize;
           color: #fff;
           letter-spacing: 1px;
           line-height: 2;
@@ -215,7 +251,7 @@
         &-item {
           font-family: $secondaryFont;
           color: #fff;
-          font-size: $primary-size;
+          font-size: $primaryFontSize;
           letter-spacing: 1px;
           line-height: 2.6;
         }
@@ -224,7 +260,7 @@
       &-follow {
         &-title {
           font-family: $tertiaryFont;
-          font-size: 20px;
+          font-size: $fourthTitleFontSize;
           color: #fff;
           letter-spacing: 1px;
           line-height: 2;
@@ -234,7 +270,7 @@
 
         &-item {
           font-family: $secondaryFont;
-          font-size: $primary-size;
+          font-size: $primaryFontSize;
           color: #fff;
           letter-spacing: 1px;
           line-height: 2.6;
@@ -244,7 +280,7 @@
 
   &__copyright {
     font-family: $secondaryFont;
-    font-size: $primary-size;
+    font-size: $primaryFontSize;
     color: #fff;
     letter-spacing: 0.8px;
     opacity: 0.4;
@@ -266,8 +302,10 @@
     }
 
     &__top {
-      justify-content: center;
-      margin-bottom: $primary-size;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      margin-bottom: $primaryFontSize;
 
       &-title {
         margin-right: unset;
@@ -291,7 +329,9 @@
     }
 
     &__section {
-      justify-content: center;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
       margin-bottom: 148px;
 
       &-content {
@@ -322,7 +362,7 @@
     }
 
     &__copyright {
-      font-size: 12px;
+      font-size: 0.75rem;
     }
 
     .extra-border {

@@ -1,0 +1,13 @@
+.send.send-hidden
+  .send__container
+    .send__close 
+      button.send__close-button
+    h6.send__title send us message 
+    form.send__form(action="process.php" method="post")
+      span.send__name-title Full Name
+      input.send__name(type="text" name="full_name" placeholder="Your Name" required)
+      span.send__email-title Email
+      input.send__email(type="email" name="email" placeholder="Your Email" required)
+      span.send__textarea-title Message
+      textarea.send__textarea(name="message" placeholder="Your Message")
+      button.send__button(type="submit") submit
