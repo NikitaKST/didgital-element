@@ -3,7 +3,7 @@ const HtmlWebPackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
 module.exports = {
-    stats: {
+  stats: {
     children: true,
   },
   devtool: 'source-map',
@@ -41,10 +41,10 @@ module.exports = {
         ],
       },
       {
-        test: /\.(s*)css$/, 
+        test: /\.(s*)css$/,
         use: [
-          MiniCssExtractPlugin.loader, 
-          'css-loader', 
+          MiniCssExtractPlugin.loader,
+          'css-loader',
           'sass-loader',
         ],
       },
@@ -61,9 +61,9 @@ module.exports = {
         use: [
           {
             loader: 'pug-loader',
-            options: {}
-          }
-        ]
+            options: {},
+          },
+        ],
       },
 
     ],
