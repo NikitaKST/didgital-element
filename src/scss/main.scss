@@ -1,18 +1,11 @@
-// General
 @import "./reset";
 @import "./fonts";
-
-// Variables
 @import "./_variables";
-
-// Mixins
 @import "./_mixins";
-
-// Blocks
 @import "./_header";
 @import "./_main";
 @import "./_footer";
-@import "./_sendMessage";
+@import "./_send";
 @import "./_message";
 
 
